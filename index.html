@@ -48,6 +48,9 @@
       href="favicon-128.png"
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JE1FCTKHM9"></script>
     <script>
@@ -75,27 +78,31 @@
         Sentry.onLoad(function() {
           Sentry.init({
             dsn: quordleInHost ? "https://cd8139814dd64a07af2a72fe40bed481@o1140342.ingest.sentry.io/6197424" : null,
-            environment: "production",
-            release: "1.2.5",
+            environment: "lady",
+            release: "1.3.1",
             allowUrls: ["quordle.com/assets"],
             ignoreErrors: [
               "ResizeObserver",
               "instantSearchSDKJSBridgeClearHighlight",
               "webkitExitFullScreen",
-              "t.flat is not a function",
+              "flat is not a function",
+              "Object doesn't support property or method 'flat'",
               "TypeError: cancelled",
               "TypeError: Load failed",
               "privateSpecialRepair",
               "BetterJsPop",
-              "bannerNight"
+              "bannerNight",
+              "window.webkit.messageHandlers",
+              "jQuery",
+              "isMainframe"
             ]
           });
         });
       }
     </script>
-    <script type="module" crossorigin src="/assets/index.d0ad3358.js"></script>
+    <script type="module" crossorigin src="/assets/index.9eabc4a9.js"></script>
     <link rel="modulepreload" href="/assets/vendor.92a689d9.js">
-    <link rel="stylesheet" href="/assets/index.a99ad323.css">
+    <link rel="stylesheet" href="/assets/index.3c6d8217.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
